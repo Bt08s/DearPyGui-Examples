@@ -183,52 +183,13 @@ dpg.create_viewport(title='Custom Title', width=600, height=200, clear_color=(11
 # Popup (messagebox)
 ![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/58ab0b96-6378-44b2-8183-bd57ff32d25e)
 ```python
-import dearpygui.dearpygui as dpg
-
-
 def popup():
     dpg.set_value("popup_text", "This is a popup")
     dpg.show_item("popup")
-
 
 def create_window():
     with dpg.window(tag="Primary Window"):
         dpg.add_button(label="Show popup", width=100, callback=popup)
         with dpg.popup(dpg.last_item(), modal=True, tag="popup"):
             dpg.add_text(tag="popup_text")
-
-
-def set_global_theme():
-    with dpg.theme() as global_theme:
-        with dpg.theme_component(dpg.mvAll):
-            dpg.add_theme_style(dpg.mvStyleVar_WindowRounding, 5)
-            dpg.add_theme_style(dpg.mvStyleVar_FrameRounding, 5)
-            dpg.add_theme_style(dpg.mvStyleVar_GrabRounding, 5)
-            dpg.add_theme_style(dpg.mvStyleVar_TabRounding, 5)
-            dpg.add_theme_style(dpg.mvStyleVar_ChildRounding, 5)
-            dpg.add_theme_style(dpg.mvStyleVar_PopupRounding, 5)
-            dpg.add_theme_style(dpg.mvStyleVar_ScrollbarRounding, 5)
-            dpg.add_theme_style(dpg.mvStyleVar_FramePadding, 5, 5)
-            dpg.add_theme_style(dpg.mvStyleVar_ItemSpacing, 5, 5)
-
-            dpg.add_theme_color(dpg.mvThemeCol_WindowBg, (21, 22, 23))
-            dpg.add_theme_color(dpg.mvThemeCol_FrameBg, (32, 50, 77))
-            dpg.add_theme_color(dpg.mvThemeCol_Button, (39, 73, 114))
-            dpg.add_theme_color(dpg.mvThemeCol_FrameBg, (32, 50, 77))
-
-    dpg.bind_theme(global_theme)
-
-
-if __name__ == "__main__":
-    dpg.create_context()
-
-    create_window()
-    set_global_theme()
-
-    dpg.create_viewport(title='Custom Title', width=600, height=200, clear_color=(115, 140, 152))
-    dpg.setup_dearpygui()
-    dpg.show_viewport()
-    dpg.set_primary_window("Primary Window", True)
-    dpg.start_dearpygui()
-    dpg.destroy_context()
 ```
