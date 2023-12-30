@@ -176,7 +176,7 @@ if __name__ == "__main__":
 ```
 
 # Non decorated window
-![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/7602559f-a9f6-41f6-a447-b735e3f9b112)
+![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/2d02e71d-17f1-46e0-a947-41eacf0bcf17)
 ```python
 dpg.create_viewport(title='Custom Title', width=600, height=200, clear_color=(115, 140, 152), decorated=False)
 ```
