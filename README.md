@@ -45,7 +45,7 @@ if __name__ == "__main__":
 ![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/d43da6a8-bb86-426e-b3d0-78b03a3cd23e)
 
 # Red theme
-```py
+```python
 def set_global_theme():
     with dpg.theme() as global_theme:
         with dpg.theme_component(dpg.mvAll):
