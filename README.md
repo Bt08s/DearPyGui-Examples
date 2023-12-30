@@ -1,4 +1,4 @@
-# ![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/1886c2eb-9da4-4a04-8d37-5a55eaa1cd87)
+# Primary window + blue theme
 ```
 import dearpygui.dearpygui as dpg
 
@@ -38,7 +38,8 @@ if __name__ == "__main__":
     dpg.create_viewport(title='Custom Title', width=600, height=200)
     dpg.setup_dearpygui()
     dpg.show_viewport()
-    dpg.set_primary_window("Primary Window", True)
+    dpg.set_primary_window("Primary Window", True) # Make window primary
     dpg.start_dearpygui()
     dpg.destroy_context()
 ```
+![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/1886c2eb-9da4-4a04-8d37-5a55eaa1cd87)
