@@ -38,7 +38,7 @@ if __name__ == "__main__":
     set_global_theme()
     create_window()
 
-    dpg.create_viewport(title='Custom Title', width=600, height=200)
+    dpg.create_viewport(title='Custom Title', width=600, height=200, clear_color=(115, 140, 152))
     dpg.setup_dearpygui()
     dpg.show_viewport()
     dpg.set_primary_window("Primary Window", True)
