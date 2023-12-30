@@ -69,3 +69,12 @@ def set_global_theme():
 
     dpg.bind_theme(global_theme)
 ```
+
+# Child window
+![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/70d631d3-7745-40b8-92c2-028ba1fd2760)
+```python
+def create_window():
+    with dpg.window(tag="Primary Window"):
+        with dpg.child_window(height=100, width=200):
+            dpg.add_text("Hello, world")
+```
