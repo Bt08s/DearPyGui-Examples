@@ -134,6 +134,32 @@ def create_window():
         drop_keys = dpg.add_text()
 
 
+def set_global_theme():
+    with dpg.theme() as global_theme:
+        with dpg.theme_component(dpg.mvAll):
+            dpg.add_theme_style(dpg.mvStyleVar_WindowRounding, 5)
+            dpg.add_theme_style(dpg.mvStyleVar_FrameRounding, 5)
+            dpg.add_theme_style(dpg.mvStyleVar_GrabRounding, 5)
+            dpg.add_theme_style(dpg.mvStyleVar_TabRounding, 5)
+            dpg.add_theme_style(dpg.mvStyleVar_ChildRounding, 5)
+            dpg.add_theme_style(dpg.mvStyleVar_PopupRounding, 5)
+            dpg.add_theme_style(dpg.mvStyleVar_ScrollbarRounding, 5)
+            dpg.add_theme_style(dpg.mvStyleVar_FramePadding, 5, 5)
+            dpg.add_theme_style(dpg.mvStyleVar_ItemSpacing, 5, 5)
+
+            dpg.add_theme_color(dpg.mvThemeCol_WindowBg, (21, 22, 23))
+            dpg.add_theme_color(dpg.mvThemeCol_FrameBg, (32, 50, 77))
+            dpg.add_theme_color(dpg.mvThemeCol_Button, (39, 73, 114))
+            dpg.add_theme_color(dpg.mvThemeCol_FrameBg, (32, 50, 77))
+
+    with dpg.theme() as hover_drag_theme:
+        with dpg.theme_component(dpg.mvAll):
+            dpg.add_theme_color(dpg.mvThemeCol_Border, (0, 180, 255), category=dpg.mvThemeCat_Core)
+            dpg.add_theme_color(dpg.mvThemeCol_ChildBg, (25, 50, 75), category=dpg.mvThemeCat_Core)
+
+    dpg.bind_theme(global_theme)
+
+
 def drop(data, keys):
     dpg.set_value(drop_text, f'{data}')
 
@@ -144,6 +170,8 @@ if __name__ == "__main__":
     dpg_dnd.set_drop(drop)
 
     create_window()
+    set_global_theme()
+
     dpg.create_viewport(title='Custom Title', width=600, height=200, clear_color=(115, 140, 152))
     dpg.setup_dearpygui()
     dpg.show_viewport()
