@@ -78,3 +78,8 @@ def create_window():
         with dpg.child_window(height=100, width=200):
             dpg.add_text("Hello, world")
 ```
+
+# Add space
+```python
+dpg.add_spacing(count=15)
+```
