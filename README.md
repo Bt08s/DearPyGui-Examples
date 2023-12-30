@@ -1,4 +1,4 @@
-# Primary window + blue theme
+# Primary window, blue theme
 ```
 import dearpygui.dearpygui as dpg
 
