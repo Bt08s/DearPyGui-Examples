@@ -63,5 +63,6 @@ def set_global_theme():
             dpg.add_theme_color(dpg.mvThemeCol_FrameBg, (84, 51, 51))
             dpg.add_theme_color(dpg.mvThemeCol_Button, (88, 47, 47))
             dpg.add_theme_color(dpg.mvThemeCol_TitleBgActive, (84, 51, 51))
+
     dpg.bind_theme(global_theme)
 ```
