@@ -66,3 +66,4 @@ def set_global_theme():
 
     dpg.bind_theme(global_theme)
 ```
+![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/bd142782-7c77-415c-8fb8-1cd4a9329a35)
