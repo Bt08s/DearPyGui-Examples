@@ -93,3 +93,15 @@ with dpg.tab_bar():
     with dpg.tab(label="Tab2"):
         dpg.add_text("Tab2 text")
 ```
+
+# Multiple windows
+![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/e626fefc-2260-4053-9a25-f95024912c02)
+```python
+def create_window1():
+    with dpg.window(label="Window 1"):
+        dpg.add_text("win1 text")
+
+def create_window2():
+    with dpg.window(label="Window 2", no_title_bar=True, pos=(100, 50)):
+        dpg.add_text("win2 text")
+```
