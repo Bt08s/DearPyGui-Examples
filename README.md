@@ -4,7 +4,7 @@
 import dearpygui.dearpygui as dpg
 
 
-def create_main_window():
+def create_window():
     with dpg.window(tag="Primary Window"):
         dpg.add_button(label="Button", width=75)
         dpg.add_checkbox(label="Checkbox")
@@ -36,7 +36,7 @@ if __name__ == "__main__":
     dpg.create_context()
 
     set_global_theme()
-    create_main_window()
+    create_window()
 
     dpg.create_viewport(title='Custom Title', width=600, height=200)
     dpg.setup_dearpygui()
