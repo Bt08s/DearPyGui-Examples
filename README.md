@@ -79,7 +79,16 @@ def create_window():
             dpg.add_text("Hello, world")
 ```
 
-# Add space
+# Space
 ```python
-dpg.add_spacing(count=15)
+dpg.add_spacing(count=10)
+```
+
+# Tab
+```python
+with dpg.tab_bar():
+    with dpg.tab(label="Tab1"):
+        dpg.add_text("Tab1 text")
+    with dpg.tab(label="Tab2"):
+        dpg.add_text("Tab2 text")
 ```
