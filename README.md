@@ -152,11 +152,6 @@ def set_global_theme():
             dpg.add_theme_color(dpg.mvThemeCol_Button, (39, 73, 114))
             dpg.add_theme_color(dpg.mvThemeCol_FrameBg, (32, 50, 77))
 
-    with dpg.theme() as hover_drag_theme:
-        with dpg.theme_component(dpg.mvAll):
-            dpg.add_theme_color(dpg.mvThemeCol_Border, (0, 180, 255), category=dpg.mvThemeCat_Core)
-            dpg.add_theme_color(dpg.mvThemeCol_ChildBg, (25, 50, 75), category=dpg.mvThemeCat_Core)
-
     dpg.bind_theme(global_theme)
 
 
