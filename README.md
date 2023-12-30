@@ -175,7 +175,7 @@ if __name__ == "__main__":
     dpg.destroy_context()
 ```
 
-# Non decorated window
+# Non decorated window (without viewport title bar)
 ```python
 dpg.create_viewport(title='Custom Title', width=600, height=200, clear_color=(115, 140, 152), decorated=False)
 ```
