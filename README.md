@@ -107,7 +107,7 @@ def create_window2():
 ```
 
 # File dialog
-![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/b7260cda-9847-4e89-8ea2-6e712df7b9e8)
+![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/5733b804-0774-4ab4-a6ca-99ccb57a0caa)
 ```python
 def select_directory(sender, app_data):
     global file_path
