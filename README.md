@@ -174,3 +174,9 @@ if __name__ == "__main__":
     dpg.start_dearpygui()
     dpg.destroy_context()
 ```
+
+# Non decorated window
+![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/7602559f-a9f6-41f6-a447-b735e3f9b112)
+```python
+dpg.create_viewport(title='Custom Title', width=600, height=200, clear_color=(115, 140, 152), decorated=False)
+```
