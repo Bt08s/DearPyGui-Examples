@@ -6,6 +6,8 @@ import dearpygui.dearpygui as dpg
 
 def create_main_window():
     with dpg.window(tag="Primary Window"):
+        dpg.add_button(label="Button", width=75)
+        dpg.add_checkbox(label="Checkbox")
         dpg.add_text("Hello, world")
 
 
@@ -39,12 +41,13 @@ if __name__ == "__main__":
     dpg.create_viewport(title='Custom Title', width=600, height=200)
     dpg.setup_dearpygui()
     dpg.show_viewport()
-    dpg.set_primary_window("Primary Window", True) # Make window primary
+    dpg.set_primary_window("Primary Window", True)
     dpg.start_dearpygui()
     dpg.destroy_context()
 ```
 
 # Red theme
+![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/bd142782-7c77-415c-8fb8-1cd4a9329a35)
 ```python
 def set_global_theme():
     with dpg.theme() as global_theme:
@@ -66,4 +69,3 @@ def set_global_theme():
 
     dpg.bind_theme(global_theme)
 ```
-![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/bd142782-7c77-415c-8fb8-1cd4a9329a35)
