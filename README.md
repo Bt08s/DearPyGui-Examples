@@ -180,7 +180,7 @@ if __name__ == "__main__":
 dpg.create_viewport(title='Custom Title', width=600, height=200, clear_color=(115, 140, 152), decorated=False)
 ```
 
-# Popup (messagebox)
+# Popup (simple messagebox)
 ![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/58ab0b96-6378-44b2-8183-bd57ff32d25e)
 ```python
 def show_popup():
