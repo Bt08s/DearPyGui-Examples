@@ -105,3 +105,17 @@ def create_window2():
     with dpg.window(label="Window 2", no_title_bar=True, pos=(100, 50)):
         dpg.add_text("win2 text")
 ```
+
+# File dialog
+![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/b7260cda-9847-4e89-8ea2-6e712df7b9e8)
+```python
+def select_directory(sender, app_data):
+    global file_path
+    file_path = app_data.get("file_path_name")
+    print(file_path)
+
+def create_window():
+    with dpg.window(tag="Primary Window"):
+        dpg.add_button(label="Select dir", width=100, callback=lambda: dpg.show_item("file_dialog"))
+        dpg.add_file_dialog(directory_selector=True, show=False, tag="file_dialog", height=250, width=400, callback=select_directory)
+```
