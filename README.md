@@ -1,5 +1,5 @@
 # Primary window, blue theme
-```
+```python
 import dearpygui.dearpygui as dpg
 
 
@@ -42,4 +42,26 @@ if __name__ == "__main__":
     dpg.start_dearpygui()
     dpg.destroy_context()
 ```
-![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/1886c2eb-9da4-4a04-8d37-5a55eaa1cd87)
+![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/d43da6a8-bb86-426e-b3d0-78b03a3cd23e)
+
+# Red theme
+```py
+def set_global_theme():
+    with dpg.theme() as global_theme:
+        with dpg.theme_component(dpg.mvAll):
+            dpg.add_theme_style(dpg.mvStyleVar_WindowRounding, 5)
+            dpg.add_theme_style(dpg.mvStyleVar_FrameRounding, 4)
+            dpg.add_theme_style(dpg.mvStyleVar_GrabRounding, 5)
+            dpg.add_theme_style(dpg.mvStyleVar_TabRounding, 5)
+            dpg.add_theme_style(dpg.mvStyleVar_ChildRounding, 5)
+            dpg.add_theme_style(dpg.mvStyleVar_PopupRounding, 5)
+            dpg.add_theme_style(dpg.mvStyleVar_ScrollbarRounding, 5)
+            dpg.add_theme_style(dpg.mvStyleVar_FramePadding, 5, 5)
+            dpg.add_theme_style(dpg.mvStyleVar_ItemSpacing, 5, 5)
+    
+            dpg.add_theme_color(dpg.mvThemeCol_WindowBg, (28, 30, 31))
+            dpg.add_theme_color(dpg.mvThemeCol_FrameBg, (84, 51, 51))
+            dpg.add_theme_color(dpg.mvThemeCol_Button, (88, 47, 47))
+            dpg.add_theme_color(dpg.mvThemeCol_TitleBgActive, (84, 51, 51))
+    dpg.bind_theme(global_theme)
+```
