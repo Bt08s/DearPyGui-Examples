@@ -119,3 +119,35 @@ def create_window():
         dpg.add_button(label="Select dir", width=100, callback=lambda: dpg.show_item("file_dialog"))
         dpg.add_file_dialog(directory_selector=True, show=False, tag="file_dialog", height=250, width=400, callback=select_directory)
 ```
+
+# Drag and drop
+![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/b5bb8bb4-13d3-49c0-bd12-2472012f92a1)
+```python
+import DearPyGui_DragAndDrop as dpg_dnd
+import dearpygui.dearpygui as dpg
+
+
+def create_window():
+    global drop_text, drop_keys
+    with dpg.window(tag="Primary Window"):
+        drop_text = dpg.add_text()
+        drop_keys = dpg.add_text()
+
+
+def drop(data, keys):
+    dpg.set_value(drop_text, f'{data}')
+
+
+if __name__ == "__main__":
+    dpg.create_context()
+    dpg_dnd.initialize()
+    dpg_dnd.set_drop(drop)
+
+    create_window()
+    dpg.create_viewport(title='Custom Title', width=600, height=200, clear_color=(115, 140, 152))
+    dpg.setup_dearpygui()
+    dpg.show_viewport()
+    dpg.set_primary_window("Primary Window", True)
+    dpg.start_dearpygui()
+    dpg.destroy_context()
+```
