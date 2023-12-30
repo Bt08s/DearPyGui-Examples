@@ -85,6 +85,7 @@ dpg.add_spacing(count=10)
 ```
 
 # Tab
+![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/fb154e78-6144-4f27-a067-924f8939bd53)
 ```python
 with dpg.tab_bar():
     with dpg.tab(label="Tab1"):
