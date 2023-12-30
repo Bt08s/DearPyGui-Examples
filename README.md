@@ -183,13 +183,13 @@ dpg.create_viewport(title='Custom Title', width=600, height=200, clear_color=(11
 # Popup (messagebox)
 ![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/58ab0b96-6378-44b2-8183-bd57ff32d25e)
 ```python
-def popup():
+def show_popup():
     dpg.set_value("popup_text", "This is a popup")
     dpg.show_item("popup")
 
 def create_window():
     with dpg.window(tag="Primary Window"):
-        dpg.add_button(label="Show popup", width=100, callback=popup)
+        dpg.add_button(label="Show popup", width=100, callback=show_popup)
         with dpg.popup(dpg.last_item(), modal=True, tag="popup"):
             dpg.add_text(tag="popup_text")
 ```
