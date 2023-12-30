@@ -106,7 +106,7 @@ def create_window2():
         dpg.add_text("win2 text")
 ```
 
-# File dialog
+# File dialog (select directory)
 ![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/5733b804-0774-4ab4-a6ca-99ccb57a0caa)
 ```python
 def select_directory(sender, app_data):
