@@ -193,3 +193,13 @@ def create_window():
         with dpg.popup(dpg.last_item(), modal=True, tag="popup"):
             dpg.add_text(tag="popup_text")
 ```
+
+Other DPG stuffs:
+* https://github.com/DataExplorerUser/autoscroll/blob/main/autoscroll.py
+* https://github.com/fabriciochamon/DearPyGui_Extend#file-browser
+* https://github.com/my1e5/dpg-examples/blob/main/misc/date_picker.py
+* https://github.com/IvanNazaruk/DearPyGui-Markdown
+
+Other GUI stuffs:
+* https://pypi.org/project/messagebox
+* https://pypi.org/project/windows_filedialogs
