@@ -45,25 +45,22 @@ if __name__ == "__main__":
 ```
 
 # Red theme
-![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/bd142782-7c77-415c-8fb8-1cd4a9329a35)
 ```python
 def set_global_theme():
     with dpg.theme() as global_theme:
         with dpg.theme_component(dpg.mvAll):
-            dpg.add_theme_style(dpg.mvStyleVar_WindowRounding, 5)
-            dpg.add_theme_style(dpg.mvStyleVar_FrameRounding, 4)
-            dpg.add_theme_style(dpg.mvStyleVar_GrabRounding, 5)
-            dpg.add_theme_style(dpg.mvStyleVar_TabRounding, 5)
-            dpg.add_theme_style(dpg.mvStyleVar_ChildRounding, 5)
-            dpg.add_theme_style(dpg.mvStyleVar_PopupRounding, 5)
-            dpg.add_theme_style(dpg.mvStyleVar_ScrollbarRounding, 5)
-            dpg.add_theme_style(dpg.mvStyleVar_FramePadding, 5, 5)
-            dpg.add_theme_style(dpg.mvStyleVar_ItemSpacing, 5, 5)
+            dpg.add_theme_style(dpg.mvStyleVar_WindowRounding, 3)
+            dpg.add_theme_style(dpg.mvStyleVar_FrameRounding, 3)
+            dpg.add_theme_style(dpg.mvStyleVar_GrabRounding, 3)
+            dpg.add_theme_style(dpg.mvStyleVar_TabRounding, 3)
+            dpg.add_theme_style(dpg.mvStyleVar_ChildRounding, 3)
+            dpg.add_theme_style(dpg.mvStyleVar_PopupRounding, 3)
+            dpg.add_theme_style(dpg.mvStyleVar_ScrollbarRounding, 3)
+            dpg.add_theme_style(dpg.mvStyleVar_FramePadding, 6, 6)
     
             dpg.add_theme_color(dpg.mvThemeCol_WindowBg, (28, 30, 31))
             dpg.add_theme_color(dpg.mvThemeCol_FrameBg, (84, 51, 51))
             dpg.add_theme_color(dpg.mvThemeCol_Button, (88, 47, 47))
-            dpg.add_theme_color(dpg.mvThemeCol_TitleBgActive, (84, 51, 51))
 
     dpg.bind_theme(global_theme)
 ```
