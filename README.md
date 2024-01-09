@@ -1,5 +1,5 @@
-# Primary window with blue theme (basic window)
-![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/d43da6a8-bb86-426e-b3d0-78b03a3cd23e)
+# Primary window with blue theme
+![image](https://github.com/Bt08s/DearPyGui-Examples/assets/68190921/e76b9bf8-86e1-4bfc-ad44-092392032741)
 ```python
 import dearpygui.dearpygui as dpg
 
